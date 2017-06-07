@@ -54,7 +54,6 @@ defaults:
       type: jobs
     values:
       layout: job
-      additional_css: post
 
 phases:
   startups_in: startups en
