@@ -8,7 +8,7 @@ additional_css: blog
 
 <section class="ui container blog-container">
     <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts %}{% unless post.category == 'recrutement' %}
         <li class="ui segment blog-segment">
             <a class="blog-segment-link" title="{{ post.title }}" href="{{ post.url }}"></a>
 
@@ -53,6 +53,6 @@ additional_css: blog
 
             <a href="{{ post.url }}">Lire la suite...</a>
         </li>
-    {% endfor %}
+    {% endunless %}{% endfor %}
     </ul>
 </section>
